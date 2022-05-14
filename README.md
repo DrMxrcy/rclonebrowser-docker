@@ -6,7 +6,7 @@ Thank you for continue developing this awesome software :)
 
 [![](https://images.microbadger.com/badges/version/romancin/rclonebrowser.svg)](https://microbadger.com/images/romancin/rclonebrowser "Docker image version")
 [![](https://images.microbadger.com/badges/image/romancin/rclonebrowser.svg)](https://microbadger.com/images/romancin/rclonebrowser "Docker image size")
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=X2CT2SWQCP74U)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal)
 
 You can invite me a beer if you want ;) 
 
@@ -17,6 +17,8 @@ Based on Alpine Linux, which provides a very small size.
 Tested and working on Synology and QNAP, but should work on any x86_64 devices.
 
 Thanks to @jlesage for a great base image for GUI apps.
+
+Thanks to @romancin for the work that was done
 
 Instructions: 
 - Map any local port to 5800 for web access
@@ -33,7 +35,7 @@ docker run -d --name=rclonebrowser \
 -e GROUP_ID=0 -e USER_ID=0 -e TZ=Europe/Madrid \
 -p 5800:5800 \
 -p 5900:5900 \
-romancin/rclonebrowser:latest
+ghcr.io/drmxrcy/rclonebrowser-docker:master
 ```
 
 Browse to `http://your-host-ip:5800` to access the RClone Browser GUI.
