@@ -1,5 +1,5 @@
 rclonebrowser_service:
-    image: romancin/rclonebrowser:latest
+    image: ghcr.io/drmxrcy/rclonebrowser-docker:master
     container_name: rclonebrowser
     ports:
       - "5804:5800"
