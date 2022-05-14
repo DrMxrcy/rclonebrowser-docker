@@ -26,9 +26,9 @@ RUN apk --no-cache add \
       dbus \
       xterm \
     && cd /tmp \
-    && wget -q http://downloads.rclone.org/rclone-${RCLONE_VERSION}-linux-${ARCH}.zip \
-    && unzip /tmp/rclone-${RCLONE_VERSION}-linux-${ARCH}.zip \
-    && mv /tmp/rclone-*-linux-${ARCH}/rclone /usr/bin \
+    && wget -q https://downloads.rclone.org/rclone-current-linux-amd64.zip \
+    && unzip /tmp/rclone-current-linux-amd64 \
+    && mv /tmp/rclone-*-linux-amd64/rclone /usr/bin \
     && rm -r /tmp/rclone* && \
 
     apk add --no-cache --virtual=build-dependencies \
@@ -79,5 +79,5 @@ LABEL \
       org.label-schema.name="rclonebrowser" \
       org.label-schema.description="Docker container for RcloneBrowser" \
       org.label-schema.version="unknown" \
-      org.label-schema.vcs-url="https://github.com/romancin/rclonebrowser-docker" \
+      org.label-schema.vcs-url="https://github.com/DrMxrcy/rclonebrowser-docker" \
       org.label-schema.schema-version="1.0"
